@@ -15,12 +15,13 @@ public class application {
 
         System.out.println(roundTable);
 
-        Marker markerOne = new Marker();
+        Marker markerOne = new Marker(true, 1.0f, "blue");
         markerOne.unCap();
         markerOne.write("Hello");
         markerOne.write("World");
+        markerOne.changeColor("Green");
 
-        Marker markerTwo = new Marker();
+        Marker markerTwo = new Marker(false, 1.0f, "red");
 
         System.out.println(markerOne);
         System.out.println(markerTwo);

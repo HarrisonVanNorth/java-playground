@@ -1,34 +1,28 @@
 package com.galvanize;
 
 public class Marker {
-    public boolean isCap() {
-        return cap;
-    }
 
-    public void setCap(boolean cap) {
+    private float inkLevel;
+    private boolean cap;
+    private String color;
+
+    public Marker (boolean cap, float inkLevel, String color){
         this.cap = cap;
-    }
-
-    public float getInkLevel() {
-        return inkLevel;
-    }
-
-    public void setInkLevel(float inkLevel) {
         this.inkLevel = inkLevel;
+        this.color = color;
     }
 
-    private float inkLevel = 1.0f;
-    private boolean cap = true;
-
-    void cap(){
+    public void isCapped(){
         cap = true;
     }
-
-    void unCap(){
+    public void unCap(){
         cap = false;
     }
+    public void changeColor( String letters ){
+        this.color = letters;
+    }
 
-    void write(String letters){
+    public void write(String letters){
         inkLevel -= letters.length() * 0.05f;
     }
 
@@ -37,6 +31,8 @@ public class Marker {
         return "Marker{" +
                 "cap='" + cap + '\'' +
                 ", ink='" + inkLevel + '\'' +
+                ", color='" + color + '\'' +
                 '}';
     }
+
 }
