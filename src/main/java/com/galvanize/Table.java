@@ -10,9 +10,11 @@ public class Table {
         return shape;
     }
 
-    public void setShape(String shape) {
+    public String setShape(String shape) {
         this.shape = shape;
+        return shape;
     }
 
     private String shape;
+
 }
