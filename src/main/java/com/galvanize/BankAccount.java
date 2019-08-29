@@ -2,7 +2,7 @@ package com.galvanize;
 
 public class BankAccount {
 
-    public long getAccount() {
+    public float getAccount() {
         return account;
     }
 
@@ -10,17 +10,17 @@ public class BankAccount {
         this.account = 0;
     }
 
-    private long account = 0;
+    private float account = 0f;
     private boolean overDrawn = false;
 
 
-    void deposit(long cents){
+    void deposit(float cents){
         this.account += cents;
     }
-    void withdraw(long cents){
+    void withdraw(float cents){
         this.account -= cents;
     }
-    public long balance(){
+    public float balance(){
         return account;
     }
     public boolean isOverDrawn(){

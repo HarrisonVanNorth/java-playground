@@ -12,12 +12,12 @@ public class TableTest {
         String result = table.setShape("Round");
         assertEquals("Round", result);
     }
-
-    public void tableGetShape(){
+    @Test
+    public void tableToString(){
         Table table = new Table();
         table.setShape("round");
         String result = table.toString();
-        assertEquals("Table{shape= 'round'}",result);
+        assertEquals("Table{shape= round}",result);
     }
 
 }
