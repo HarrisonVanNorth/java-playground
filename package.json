@@ -1,0 +1,19 @@
+{
+  "name": "clear",
+  "version": "1.0.0",
+  "description": "java -version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarrisonVanNorth/java-playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarrisonVanNorth/java-playground/issues"
+  },
+  "homepage": "https://github.com/HarrisonVanNorth/java-playground#readme"
+}

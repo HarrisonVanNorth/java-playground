@@ -29,3 +29,8 @@ dependencies {
     testCompile 'org.apiguardian:apiguardian-api:1.0.0',
             'org.junit.jupiter:junit-jupiter-engine:5.0.2'
 }
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.5.1'
+    distributionType = Wrapper.DistributionType.ALL
+}
